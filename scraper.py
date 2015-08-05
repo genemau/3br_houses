@@ -37,7 +37,7 @@ def getHousesCount(suburb, postCode):
 
 
 extractedOn = datetime.strftime(datetime.now(), '%Y-%m-%d %H:%M:%S')
-dictReader = csv.DictReader(open('Suburbs.csv', 'rb'))
+dictReader = csv.DictReader(open('suburbs.csv', 'rb'))
 
 for line in dictReader:
     getHousesCount(line['Suburb'], line['PostCode'])
